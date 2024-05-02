@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dactylo</title>
+    <link rel="stylesheet" href="dactylo.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="startGame">
+            <h1>Dactylographie</h1>
+            <button id="pauseButton">Pause/Reprendre</button>
+        </div>
+        <div id="difficultyLevel">
+            <label>Veuillez choisir un niveau :</label>
+            <input type="radio" id="easy" name="difficulty" value="easy">
+            <label for="easy">Facile</label>
+            <input type="radio" id="medium" name="difficulty" value="medium">
+            <label for="medium">Moyen</label>
+            <input type="radio" id="hard" name="difficulty" value="hard">
+            <label for="hard">Difficile</label>
+        </div>
+        <div id="wordDisplay"></div>
+        <input type="text" id="userInput" placeholder="Saisissez le mot">
+        <div id="tex">
+            <div id="scor"><p>Score :</p> <span id="scoreDisplay">0</span></div>
+            <div id="niv"><p>Niveau : </p><span id="levelDisplay"></span></div>
+            <div id="tem"><p>Temps restant : </p><span id="countdownDisplay">10s</span></div>
+        </div>
+    </div>
+    <script src="dactylo.js"></script>
+</body>
+</html>
